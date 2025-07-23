@@ -125,11 +125,20 @@
 
   </div>
 
-  <script>
-    document.body.addEventListener('click', () => {
-      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-    });
-  </script>
+<script>
+  const rickroll = () => {
+    window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+  };
+
+
+  document.addEventListener('click', rickroll, { once: true });
+
+
+  document.addEventListener('keydown', rickroll, { once: true });
+
+
+  document.addEventListener('touchstart', rickroll, { once: true });
+</script>
 
 </body>
 
