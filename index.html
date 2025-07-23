@@ -15,25 +15,122 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      padding: 0;
     }
 
-    iframe {
+    body {
+      background-color: #f3f2ef;
+      color: #1d1d1d;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #0073b1;
+      font-size: 24px;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
       width: 100%;
-      height: 100%;
-      border: none;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .profile img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .profile h2 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .profile p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .post {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        margin: 10px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <p>If you are not redirected automatically, <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">click here</a>.</p>
+
+  <header>
+    <h1>LinkedIn</h1>
+    <nav>
+      <span>Home</span> | 
+      <span>My Network</span> | 
+      <span>Jobs</span>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="card">
+      <div class="profile">
+        <img src="/LinkedIn-Page-Xianyao-Wei/big1zu1.png" alt="Profile">
+        <div>
+          <h2>Xianyao Wei</h2>
+          <p>UX/UI/Web/Interaction Designer</p>
+        </div>
+      </div>
+      <div class="post">
+        Excited to start my new role at 404! 🚀
+      </div>
+    </div>
+
+
+  </div>
+
+  <script>
+    document.body.addEventListener('click', () => {
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    });
+  </script>
+
 </body>
 
 </html>
